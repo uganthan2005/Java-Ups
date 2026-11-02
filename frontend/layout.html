@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #ff0000;
+            padding: 20px;
+            text-align: center;
+        }
+        .c {
+            display: flex;
+            flex: 1;
+        }
+        .c1 {
+            width: 500px;
+            background-color: #780000;
+            padding: 20px;
+        }
+        .c2 {
+            width: 500px;
+            background-color: #0088ff;
+            padding: 20px;
+        }
+        .c3 {
+            width: 500px;
+            background-color: #009f22;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #0800ff88;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="c"> 
+        <div class="c1">sec1</div>
+        <div class="c2">sec2</div>
+        <div class="c3">sec3</div>
+        </div>
+        <div class="c">
+            <div class="c2">sec4</div>
+            <div class="c3">sec5</div>
+            <div class="c1">sec7</div>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>

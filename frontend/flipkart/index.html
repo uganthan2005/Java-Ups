@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color:white;
+        }
+        .header a {
+            color :black;
+            text-decoration: none;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+    
+            .search-bar {
+                display: flex;
+                align-items: center;
+                width: 70%;
+                background-color: #f0f5ff;
+                border: 2px solid #2874f0;
+                border-radius: 8px;
+                padding: 5px 12px;
+            }
+
+            .search-bar input[type="search"] {
+                flex: 1;
+                padding: 8px;
+                border: none;
+                outline: none;
+                background: transparent;
+                font-size: 16px;
+            }
+
+            .search-bar button {
+                padding: 8px 12px;
+                background-color: transparent;
+                color: #2874f0;
+                border: none;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            .search-bar button:hover {
+                color: #0056b3;
+            }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+        }
+
+        .products {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            width: 220px;
+        }
+
+        .product img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+
+        .rating {
+            background: #e8f5e9;
+            padding: 5px;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .old {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .offer {
+            color: blue;
+        }
+        
+    </style>
+    </head>
+
+    <body>
+    <header class="header">
+        <table width="100%" cellpadding="8">
+            <tr>
+                <td width="10%">
+                <a href="index.html">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/free-flipkart-icon-svg-download-png-226594.png?f=webp&w=512" alt="Flipkart Logo" width="150" height="150">
+                </td>
+                <td align="right">
+                     <b>Location not set</b>
+                    <a href="#location" style="color: #2874f0;">Select delivery location ›</a>
+                </td>
+            </tr>
+        </table>
+
+        <table width="100%" cellpadding="10">
+            <tr>
+                <td width="75%">
+                    <form class="search-bar" action="#" method="get">
+                        <input type="search" name="search" placeholder="Search for Products, Brands and More" size="80">
+                        <button type="submit">Search</button>
+                    </form>
+                </td>
+                <td class="Login" align="center"><a href="#login">Login</a></td>
+                <td class="More" align="center"><a href="#more">More</a></td>
+                <td class="Cart" align="center"><a href="#cart">Cart</a></td>
+            </tr>
+        </table>
+        <hr>
+
+        <nav>
+            <table width="100%" cellpadding="8">
+                <tr align="center">
+                    <td><a href="#for-you"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/all.svg" height="35" ><br>For You</a></td>
+                    <td><a href="#fashion"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/fashion.svg" height="35"><br>Fashion</a></td>
+                    <td><a href="#mobiles"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/mobiles.svg" height="35"><br>Mobiles</a></td>
+                    <td><a href="#electronics"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/electronics.svg" height="35"><br>Electronics</a></td>
+                    <td><a href="#beauty"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/beauty.svg" height="35"><br>Beauty</a></td>
+                    <td><a href="#home"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/home-final.svg" height="35"><br>Home</a></td>
+                    <td><a href="#appliances"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" height="35"><br>Appliances</a></td>
+                    <td><a href="#toys"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/toy.svg" height="35"><br>Toys</a></td>
+                    <td><a href="#food"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/food.svg" height="35"><br>Food</a></td>
+                    <td><a href="#sports"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/sport.svg" height="35"><br>Sports</a></td>
+                    <td><a href="#furniture"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/furniture.svg" height="35"><br>Furniture</a></td>
+                    <td><a href="#books"><img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/books.svg" height="35"><br>Books</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <banner>
+        <img src="https://storage.googleapis.com/flipkart-stories-media/IMG_2935_a637def672/IMG_2935_a637def672.png" alt="Flipkart Banner" width="100%" height="auto" border="0" border-radius="10px">
+    </banner>
+
+    <table>
+        <h1 align="center">Suggested For You</h1>
+        <div class="products">
+
+        <div class="product">
+            <img src="https://rukminim1.flixcart.com/image/3188/3188/xif0q/computer/m/f/5/-enriched-transparent-original-imahg53uzmw8kka5.png?q=90" alt="ASUS Laptop">
+            <p class="rating">4.3 ★</p>
+            <p>ASUS Vivobook 15 Intel Core</p>
+            <p class="price">₹29,699 <span class="old">₹56,990</span></p>
+            <p class="offer">₹27,264 with Bank offer</p>
+            <b>Top Discount of the Sale</b>
+        </div>
+
+        <div class="product">
+            <img src="https://rukminim1.flixcart.com/image/3188/3188/xif0q/computer/f/j/h/-original-imahg4utpvmaqqzn.jpeg?q=90" alt="ASUS Vivobook">
+            <p class="rating">4.4 ★</p>
+            <p>ASUS Vivobook S14</p>
+            <p class="price">₹88,238 <span class="old">₹1,24,999</span></p>
+            <p class="offer">₹82,238 with Bank offer</p>
+            <b style="color:green">Lowest Price Live</b>
+        </div>
+
+        <div class="product">
+            <img src="https://rukminim1.flixcart.com/image/3188/3188/xif0q/computer/f/5/j/-original-imahrz92h2zqqpgs.jpeg?q=90" alt="HP Laptop">
+            <p class="rating">4.2 ★</p>
+            <p>HP Victus Intel Core i5</p>
+            <p class="price">₹72,990 <span class="old">₹95,990</span></p>
+            <p class="offer">₹68,990 with Bank offer</p>
+        </div>
+        <div class="product">
+            <img src="https://rukminim1.flixcart.com/image/3188/3188/xif0q/computer/f/j/h/-original-imahg4utpvmaqqzn.jpeg?q=90" alt="ASUS Vivobook">
+            <p class="rating">4.4 ★</p>
+            <p>ASUS Vivobook S14</p>
+            <p class="price">₹88,238 <span class="old">₹1,24,999</span></p>
+            <p class="offer">₹82,238 with Bank offer</p>
+            <b style="color:green">Lowest Price Live</b>
+        </div>
+        <div>
+            <div class="product">
+            <img src="https://rukminim1.flixcart.com/image/3188/3188/xif0q/computer/f/5/j/-original-imahrz92h2zqqpgs.jpeg?q=90" alt="HP Laptop">
+            <p class="rating">4.2 ★</p>    
+            <p>HP Victus Intel Core i5</p>
+            <p class="price">₹72,990 <span class="old">₹95,990</span></p>
+            <p class="offer">₹68,990 with Bank offer</p>
+            <b style="color:green">Lowest Price Live</b>
+        </div>
+        
+
+    </div>
+        
+    </body>
+    
+</html>
+
+    
+    
